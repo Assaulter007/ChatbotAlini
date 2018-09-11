@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manual do Usuário</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Fav Icon -->
+	<link rel="shortcut icon" href="images/logonormal.png" />
+	<!-- Importando BootStrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<!-- Relacionando com o CSS de Estilo -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Fontes Show -->
+	<link href="https://fonts.googleapis.com/css?family=Contrail+One|Allan|Kaushan+Script|Oswald|Roboto+Slab|Abel" rel="stylesheet">
+	<!-- Cor da Barra de Endereço MOBILE -->
+    <meta name="theme-color" content="#333">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid">
+
+		<!-- Hero on Mobile Resolution-->
+		<div class="row d-block d-sm-none">
+			<div class="col-xs-12 hero" style="height:102vh;">
+
+				<!-- Menu -->
+				<div class="row menu-content">
+					<a class="col-2 menu logo-menu mobile-button" href="#"><img class="logo-alini" src="images/menu-icon.png"></a>
+				</div>
+
+				<div class="sidebar-menu">
+					<h1 class="sidemenu-title space-left-7" style="color: white; font-family: Abel; display: inline-block;">MENU</h1>
+					<a class="menu-close">X</a><br>
+
+					<div class="menu-item-mobile active-mobile">
+						<img class="link-icon space-left-65" src="images/home-icon.png">
+						<a class="menu-link menu align-mobile active-menu" href="home.html"><b>HOME</b></a>
+					</div>
+
+					<div class="menu-item-mobile">
+						<img class="link-icon space-left-8" src="images/chat-icon.png">
+						<a class="menu-link menu align-mobile " href="http://alini.pythonanywhere.com/">CHATBOT</a>
+					</div>
+
+
+					<div class="menu-item-mobile">
+						<img class="link-icon space-left-8" src="images/manual.png">
+						<a class="menu-link menu align-mobile " href="manual.html">MANUAL</a>
+					</div>
+
+					<div class="menu-item-mobile">
+						<img class="link-icon space-left-8" src="images/tag-icon.png">
+						<a class="menu-link menu align-mobile " href="equipe.html">EQUIPE</a>
+					</div>
+
+					<div class="theme-container">
+						<center>
+						<h2 style="margin-bottom: 3px;">
+							<img class="theme-icon" src="images/theme-icon.png" style="margin-left: -20px; height: 25px;">
+							TEMAS
+						</h2>
+						<p style="margin: 5px 0 0 0;">Você pode escolher a paleta de cores do site a tua própria maneira, faça bom uso e deixe o site com a sua cara!</p>
+						<hr style="border: solid 1px #414b84; width: 75%; margin-bottom: 0px;">
+
+						<div>
+							<div style="width: 50%; float: left;">
+								<div class="theme-1"><br><br><img class="theme-icon2" src="images/theme-icon.png"></div>
+							</div>
+
+							<div style="width: 50%; float: right;">
+								<div class="theme-2"><br><br><img class="theme-icon2" src="images/theme-icon.png"></div>
+							</div>
+						</div>
+
+						<div>
+							<div style="width: 50%; float: left;">
+								<div class="theme-3"><br><br><img class="theme-icon2" src="images/theme-icon.png"></div>
+							</div>
+
+							<div style="width: 50%; float: right;">
+								<div class="theme-4" style="margin-bottom: 15px;"><br><br><img class="theme-icon2" src="images/theme-icon.png"></div>
+							</div><br>
+						</div><br>
+
+						<hr style="border: solid 1px #414b84; width: 75%;">
+						<p>Não se esqueça de salvar suas alterações!</p>
+						<button class="save-theme button-1 button-1plus" style="margin-top: 0px; margin-bottom: 20px;">SALVAR</button><br>
+						</center>
+					</div>
+
+				</div>
+				<center>
+
+				<div class="hero-text">
+					<div class="text-mobile-hero">
+					  	<h1 style="margin: 25% 0 0 0; ">A.L.I.N.I</h1>
+						<p style="font-size: 18px; margin-top: -5px;">Artificial Language Interpretator of Natural Input</p>
+					</div>
+					<hr style="width: 65%; border: solid 1px #707dc7; margin-top: 20px; margin-bottom: 12px;">
+					<div class="text-mobile-hero2">
+						Conversando com<br> o Futuro!
+					</div>
+				</div>
+				<a href="#section1"><img class="arrow-down-mobile" src="images/arrowdown.png"></a>
+
+				</center>
+
+			</div>
+		</div>
+
+		<!-- Fim do Hero Mobile -->
+
+		<!-- Hero on Large Resolution -->
+		<div class="row d-none d-sm-block">
+			<div class="col-md-12 hero" id="hero">
+
+				<!-- Menu -->
+				<div class="row menu-content">
+
+					<a class="col-md-2 menu logo-menu" href="home.html"><img class="logo-alini" src="images/menu-icon.png"><b class="alini-text">MENU</b></a>
+					<div class="space-menu col-md-5 menu"></div>
+
+					<a class="menu-link col-md-1 hide menu" href="home.html">
+						<img class="link-icon" src="images/home-icon.png">
+						<div class="overlay1">
+								<div class="overlay-text">Home</div>
+						</div>
+					</a>
+
+					<a class="menu-link col-md-1 hide menu" href="http://alini.pythonanywhere.com/">
+						<img class="link-icon" src="images/chat-icon.png">
+						<div class="overlay1">
+								<div class="overlay-text">Chatbot</div>
+						</div>
+					</a>
+
+					<a class="menu-link col-md-1 hide menu open-theme active" href="manual.html">
+						<img class="link-icon" src="images/manual.png">
+						<div class="overlay1">
+								<div class="overlay-text">Manual</div>
+						</div>
+					</a>
+
+					<a class="menu-link col-md-1 hide menu" href="equipe.html">
+						<img class="link-icon" src="images/tag-icon.png">
+						<div class="overlay1">
+								<div class="overlay-text">Equipe</div>
+						</div>
+					</a>
+
+				</div>
+			<!-- Fim do Menu -->
+
+				<div class="hero-text">
+					<div class="text-hero-3">
+						<br>
+						<h1 style="margin-bottom: -20px; margin-top: -8%;">MANUAL DE<br>
+						USUÁRIO</h1>
+						<p style="font-size: 20px;">Dicas e Instruções de Comandos para A.L.I.N.I</p><br><br>
+					</div>
+
+					<div class="text-hero-4">
+						Converse com<br> o Futuro agora!<br>
+						<a href="#section1" class="button-mais">SAIBA MAIS!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 manual-content" id="section1">
+				<center>
+					<img src="images/manual.png" class="title-icon">
+					<b class="title-manual">MANUAL DE COMANDOS DO USUÁRIO</b>
+					<hr style="border: solid 1.5px white; width: 90%; margin-top: 25px;">
+					<p style="padding: 10px 10%; color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.
+					Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.<br><br>
+					</p>
+				</center>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-10 offset-md-1 print-1">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<center>
+					<p style="padding: 3% 10% 7% 10%;">Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</center>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-10 offset-md-1">
+				<div class="row">
+					<div class="col-md-4 card-manual">
+						<center>
+							<img src="images/logonormal.png" class="icon-cards">
+							<h3 style="color: #383f63;">TÍTULO</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.  </p>
+						</center>
+					</div>
+
+					<div class="col-md-4 card-manual">
+						<center><img src="images/logonormal.png" class="icon-cards">
+							<h3 style="color: #383f63;">TÍTULO</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.  </p></center>
+					</div>
+
+					<div class="col-md-4 card-manual">
+						<center><img src="images/logonormal.png" class="icon-cards">
+							<h3 style="color: #383f63;">TÍTULO</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.  </p></center>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 banner-manual"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<center class="manual-subdivision">
+					<img src="images/manual.png" class="title-icon">
+					<b class="title-manual">INSTRUÇÕES</b>
+					<hr style="border: solid 1.5px white; width: 90%; margin-top: 25px;">
+					<p style="padding: 10px 10%; color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.  </p>
+				</center>
+
+				<div class="row commands">
+					<div class="col-md-6 offset-md-1 print-content" style="border-right: solid 2px #383f63; border-radius: 35px 0 0 0;">
+						<img src="images/print-chatbot.png" class="print-img">
+					</div>
+					<div class="col-md-4" style="background-color: rgba(0,0,0,0.3);padding: 0 35px; border-radius:  0 0 35px 0;">
+						<center>
+							<h3 style="color: #383f63; padding-top: 100px;">
+								<img src="images/tag-icon.png" style="height: 25px;margin: 0 2px -4px -5px;">
+								TÍTULO
+							</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua </p>
+						</center>
+					</div>
+				</div>
+
+				<div class="row commands">
+					<div class="col-md-4 offset-md-1" style="background-color: rgba(0,0,0,0.3);padding: 0 35px; border-radius:  35px 0 0 0;">
+						<center>
+							<h3 style="color: #383f63; padding-top: 100px;">
+								<img src="images/tag-icon.png" style="height: 25px;margin: 0 2px -4px -5px;">
+								TÍTULO
+							</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua </p>
+						</center>
+					</div>
+					<div class="col-md-6 print-content" style="border-left: solid 2px #383f63; border-radius:  0 0 35px 0;">
+						<img src="images/print-chatbot.png" class="print-img">
+					</div>
+				</div>
+
+				<div class="row commands">
+					<div class="col-md-6 offset-md-1 print-content" style="border-right: solid 2px #383f63; border-radius: 35px 0 0 0;">
+						<img src="images/print-chatbot.png" class="print-img">
+					</div>
+					<div class="col-md-4" style="background-color: rgba(0,0,0,0.3);padding: 0 35px; border-radius:  0 0 35px 0;">
+						<center>
+							<h3 style="color: #383f63; padding-top: 100px;">
+								<img src="images/tag-icon.png" style="height: 25px;margin: 0 2px -4px -5px;">
+								TÍTULO
+							</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua </p>
+						</center>
+					</div>
+				</div>
+
+				<div class="row commands">
+					<div class="col-md-4 offset-md-1" style="background-color: rgba(0,0,0,0.3);padding: 0 35px; border-radius:  35px 0 0 0;">
+						<center>
+							<h3 style="color: #383f63; padding-top: 100px;">
+								<img src="images/tag-icon.png" style="height: 25px;margin: 0 2px -4px -5px;">
+								TÍTULO
+							</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua </p>
+						</center>
+					</div>
+					<div class="col-md-6 print-content" style="border-left: solid 2px #383f63; border-radius:  0 0 35px 0;">
+						<img src="images/print-chatbot.png" class="print-img">
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<center><a href="#hero" class="button-mais">VOLTAR AO TOPO</a></center>
+
+		<!-- Footer -->
+		<!-- Skew do Footer -->
+		<div class="row">
+			<div class="col-md-12 skew-footer"></div>
+		</div>
+
+		<!-- Footer Parte 1: Sobre nós -->
+		<div class="row">
+			<div class="col-md-5 footer">
+
+				<h2>
+					<img  class="footer-icons" src="images/lamp.png">
+					SOBRE A.L.I.N.I. ...
+				</h2>
+				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
+				<div class="footer-adjust">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.<br><br>
+				</div><br>
+				<b style=" float: right; padding-right: 20px;">- 3MIN1, (2018)</b>
+
+			</div>
+
+			<!-- Footer Parte 2: Redes Sociais -->
+			<div class="col-md-4 footer">
+
+				<h2>
+					<img  class="footer-icons" src="images/social.png">
+					REDES SOCIAIS
+				</h2>
+				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
+				<div class="footer-adjust">
+					<img class="social-icons" src="images/phone.png"><span class="social-links">(13)4002-8922</span><br>
+					<img class="social-icons" src="images/mail.png"><span class="social-links">contato.alini@gmail.com</span><br>
+					<a href="https://www.facebook.com/ALINIChatbot"><img class="social-icons" src="images/fb.png"><span class="social-links">facebook.com/ALINIChatbot</span></a><br>
+					<a href="https://www.instagram.com/alinichatbot"><img class="social-icons" src="images/Instagram-icon.png"><span class="social-links">instagram.com/alinichatbot</span></a><br>
+				</div>
+
+			</div>
+
+			<!-- Footer Parte 3: Navegação -->
+			<div class="col-md-3 footer d-none d-sm-block">
+
+				<h2>
+					<img  class="footer-icons" src="images/map.png">
+					NAVEGAÇÃO
+				</h2>
+				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
+
+				<div class="footer-adjust">
+					<a href="home.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspHome</span></a><br>
+					<a href="http://alini.pythonanywhere.com/" class="nav-item"> • <span class="nav-text">&nbsp&nbspChatbot</span></a><br>
+					<a href="manual.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspManual</span></a><br>
+					<a href="equipe.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspEquipe</span></a><br>
+				</div>
+
+			</div>
+
+			<div class="col-md-3 footer d-block d-sm-none" style="height: 230px">
+
+				<h2>
+					<img  class="footer-icons" src="images/map.png">
+					NAVEGAÇÃO
+				</h2>
+				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
+
+				<div class="footer-adjust">
+					<a href="home.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspHome</span></a><br>
+					<a href="http://alini.pythonanywhere.com/" class="nav-item"> • <span class="nav-text">&nbsp&nbspChatbot</span></a><br>
+					<a href="manual.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspManual</span></a><br>
+					<a href="equipe.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspEquipe</span></a><br>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Footer Parte 4: Créditos e Extras -->
+		<div class="row">
+			<div class="col-md-12 footer-down">
+				<b style="float; left;">Etec de Itanhaém &nbsp|&nbsp  2018 &nbsp©</b>
+				<b style="float: right;">A . L . I . N . I<img  class="final-icon" src="images/lamp.png"></b>
+			</div>
+		</div>
+
+	</div>
+</div>
+    </body>
+
+</html>
+
+<!-- Importando o JQuery & Suas Funções -->
+<script src="css/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+
+				$('.space-menu').toggleClass("col-md-6", 1000, "easeOutQuint");
+				$('.hide').fadeToggle("fast");
+
+				$('.mobile-button').click(function(){
+						$('.sidebar-menu').addClass("hide-animation-menu");
+				});
+
+				$('.menu-close, .sidemenu-title').click(function(){
+						$('.sidebar-menu').removeClass("hide-animation-menu");
+				});
+
+				$('.tab').click(function(){
+						$('.themes').addClass('show-div')
+				});
+
+				$('.close-theme').click(function(){
+						$('.themes').removeClass('show-div')
+				});
+
+				$('.theme-1').click(function(){
+					alert('tema1');
+				});
+
+				$('.theme-2').click(function(){
+					alert('tema2');
+				});
+
+				$('.theme-3').click(function(){
+					alert('tema3');
+				});
+
+				$('.theme-4').click(function(){
+					alert('tema4');
+				});
+
+				$('.save-theme').click(function(){
+					alert('Tema Salvo com Sucesso!');
+				});
+
+	});
+</script>
+
+<style type="text/css">
+
+	.skew-footer{
+		margin-top: 100px;
+	}
+
+	.row{
+		margin-right: 0px;
+	}
+
+	.container-fluid{
+		padding-right: 0px;
+	}
+
+	.hero{
+		height: 100vh;
+	}
+
+	.hero-text{
+		margin-top: 11%;
+	}
+
+</style>

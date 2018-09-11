@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="images/logonormal.png" />
+<!-- Importando BootStrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+<!-- Relacionando com o CSS de Estilo -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Fontes Show -->
+<link rel="stylesheet" type="text/css" href="fonts/Abel/Abel.css">
+<link href="https://fonts.googleapis.com/css?family=Contrail+One|Allan|Abel|Kaushan+Script|Oswald|Roboto+Slab" rel="stylesheet">
+<!-- Cor da Barra de Endereço MOBILE -->
+<meta name="theme-color" content="#333">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<!-- Legenda de Classes:
+	• d-none d-sm-block = Oculta um elemento em resolução mobile [equivalente ao Hide on Med and Down]
+	• d-block d-sm-none = Oculta um elemento em resolução normal [equivalente ao Hide on Large]
+-->
+
+<div class="container-fluid">
+
+<!-- Div de Personalização de Temas -->
+
+<!--<div class="row">-->
+<!--	<div class="col-md-11 themes d-none d-sm-block">-->
+<!--		<a class="close-theme">X</a><br>-->
+<!--		<center>-->
+<!--			<h2 style="margin-bottom: 3px;">TEMAS</h2>Você pode escolher a paleta de cores do site a tua própria maneira, faça bom uso e deixe o site com a sua cara!<br><br>-->
+<!--			<hr style="border: solid 1px #414b84; width: 75%;"><br>-->
+
+<!--			<div class="row">-->
+<!--				<div class="col-md-3"><b>Tema Padrão</b>-->
+<!--				<div class="theme-1"-->
+<!--					id="tema" -->
+<!--					gradientcolor="linear-gradient(to right, #3a6186, #89253e)" -->
+<!--					backgrounddiv="#37333b" -->
+<!--					backgroundimage="url(../images/wpxblue2.jpg)"-->
+<!--					backgroundbody="#efefef"-->
+<!--					cortexto="#000000"-->
+<!--					cortextodiv="#FFFFFF"-->
+<!--					skewscolor="#efefef"-->
+<!--					divball="#37333b"-->
+<!--					divballcontour="8px solid rgb(109, 59, 88)"-->
+<!--					icongradient1="url(../images/brain-iconpadrao.png)"-->
+<!--					icongradient2="url(../images/gear-iconpadrao.png)"-->
+<!--					icongradient3="url(../images/puzzle-iconpadrao.png)">-->
+<!--				<br><br>-->
+<!--				<img class="theme-icon2" src="images/theme-icon.png">-->
+<!--				</div>-->
+<!--				</div>-->
+
+<!--				<div class="col-md-3"><b>Tema Escuro</b>-->
+<!--				<div class="theme-2"-->
+<!--					id="tema" -->
+<!--					gradientcolor="linear-gradient(to right, #bbd2c5, #536976)" -->
+<!--					backgrounddiv="#d8d8d8" -->
+<!--					backgroundimage="url(../images/wp6.jpg)"-->
+<!--					backgroundbody="#232323"-->
+<!--					cortexto="#FFF"-->
+<!--					cortextodiv="#000"-->
+<!--					skewscolor="#232323"-->
+<!--					divball="#37333b"-->
+<!--					divballcontour="8px solid #788f92"-->
+<!--					icongradient1="url(../images/brain-iconescuro.png)"-->
+<!--					icongradient2="url(../images/gear-iconescuro.png)"-->
+<!--					icongradient3="url(../images/puzzle-iconescuro.png)">-->
+<!--				<br><br>-->
+<!--				<img class="theme-icon2" src="images/theme-icon.png">-->
+<!--				</div>-->
+<!--				</div>-->
+
+<!--				<div class="col-md-3"><b>Tema Lava</b>-->
+<!--				<div class="theme-3"-->
+<!--					id="tema" -->
+<!--					gradientcolor="linear-gradient(to right, #BF6900, #D13800)" -->
+<!--					backgrounddiv="#efefef" -->
+<!--					backgroundimage="url(../images/back-test6.jpg)"-->
+<!--					backgroundbody="#191919"-->
+<!--					cortexto="#FFF"-->
+<!--					cortextodiv="#000"-->
+<!--					skewscolor="#191919"-->
+<!--					divball="#efefef"-->
+<!--					divballcontour="8px solid rgb(205, 68, 0)"-->
+<!--					icongradient1="url(../images/brain-iconlava.png)"-->
+<!--					icongradient2="url(../images/gear-iconlava.png)"-->
+<!--					icongradient3="url(../images/puzzle-iconlava.png)">-->
+<!--				<br><br>-->
+<!--				<img class="theme-icon2" src="images/theme-icon.png">-->
+<!--				</div>-->
+<!--				</div>-->
+
+<!--				<div class="col-md-3"><b>Tema Inverno</b>-->
+<!--				<div class="theme-4"-->
+<!--					id="tema" -->
+<!--					gradientcolor="linear-gradient(to right, #5E503F, #5E503F)" -->
+<!--					backgrounddiv="#22333b" -->
+<!--					backgroundimage="url(../images/back-test4.jpg)"-->
+<!--					backgroundbody="#efefef"-->
+<!--					cortexto="#000000"-->
+<!--					cortextodiv="#FFF"-->
+<!--					skewscolor="#efefef"-->
+<!--					divball="#efefef"-->
+<!--					divballcontour="8px solid #5E503F"-->
+<!--					icongradient1="url(../images/brain-iconinverno.png)"-->
+<!--					icongradient2="url(../images/gear-iconinverno.png)"-->
+<!--					icongradient3="url(../images/puzzle-iconinverno.png)">-->
+<!--				<br><br>-->
+<!--				<img class="theme-icon2" src="images/theme-icon.png">-->
+<!--				</div>-->
+<!--				</div>-->
+
+<!--				<div class="tab">-->
+<!--					<img class="theme-icon" src="images/theme-icon.png">-->
+<!--					<img class="theme-icon" src="images/arrow-left.png" style="height: 24px;">-->
+<!--				</div>-->
+<!--			</div>-->
+
+<!--				<br>-->
+<!--					<hr style="border: solid 1px #414b84; width: 75%;"><br>-->
+<!--				Não se esqueça de salvar suas alterações!<br>-->
+<!--				<button class="save-theme button-1 button-1plus" id="salvar">SALVAR</button>-->
+
+<!--		</center>-->
+<!--	</div>-->
+<!--</div>-->
+
+<!-- <script src="../js/jquery-1.12.0.min.js"></script>-->
+<!-- <script src="../js/bootstrap.min.js"></script>-->
+
+<!--<script>-->
+<!--$(document).ready(function(){-->
+
+<!--	if(localStorage.body != ""){-->
+<!--        $('.info-box').css('border-image', localStorage.gradientcolor);-->
+<!--        $('.info-box2').css('border-image', localStorage.gradientcolor);-->
+<!--        $('.info-box').css('background-color', localStorage.backgrounddiv);-->
+<!--        $('.info-box2').css('background-color', localStorage.backgrounddiv);-->
+<!--        $('body').css('background-color', localStorage.backgroundbody);-->
+<!--        $('.hero').css('background-image', localStorage.backgroundimage);-->
+<!--        $('.middle-text').css('color', localStorage.cortexto);-->
+<!--        $('.info-box').css('color', localStorage.cortextodiv);-->
+<!--        $('.info-box2').css('color', localStorage.cortextodiv);-->
+<!--        $('.skew-1').css('background-color', localStorage.skewscolor);-->
+<!--        $('.skew-2').css('background-color', localStorage.skewscolor);-->
+<!--        $('.div-ball').css('background-color', localStorage.divball);-->
+<!--        $('.icon-img1').css('background-image', localStorage.icongradient1);-->
+<!--        $('.icon-img1-mobile').css('background-image', localStorage.icongradient1);-->
+<!--        $('.icon-img2').css('background-image', localStorage.icongradient2);-->
+<!--        $('.icon-img2-mobile').css('background-image', localStorage.icongradient2);-->
+<!--        $('.icon-img3').css('background-image', localStorage.icongradient3);-->
+<!--        $('.icon-img3-mobile').css('background-image', localStorage.icongradient3);-->
+
+<!--    }-->
+
+<!--     $(document).on('click','#tema',function(){-->
+
+<!--        var gradientcolor = $(this).attr('gradientcolor');-->
+<!--        var backgrounddiv = $(this).attr('backgrounddiv');-->
+<!--        var backgroundbody = $(this).attr('backgroundbody');-->
+<!--        var backgroundimage = $(this).attr('backgroundimage');-->
+<!--        var cortexto = $(this).attr('cortexto');-->
+<!--        var cortextodiv = $(this).attr('cortextodiv');-->
+<!--        var skewscolor = $(this).attr('skewscolor');-->
+<!--        var divball = $(this).attr('divball');-->
+<!--        var divballcontour = $(this).attr('divballcontour');-->
+<!--        var icongradient1 = $(this).attr('icongradient1');-->
+<!--        var icongradient2 = $(this).attr('icongradient2');-->
+<!--        var icongradient3 = $(this).attr('icongradient3');-->
+
+
+<!--        $('.info-box').css('border-image',gradientcolor);-->
+<!--        $('.info-box2').css('border-image',gradientcolor);-->
+<!--        $('.info-box').css('background-color',backgrounddiv);-->
+<!--        $('.info-box2').css('background-color',backgrounddiv);-->
+<!--        $('body').css('background-color',backgroundbody);-->
+<!--        $('.hero').css('background-image',backgroundimage);-->
+<!--        $('.middle-text').css('color',cortexto);-->
+<!--        $('.info-box').css('color',cortextodiv);-->
+<!--        $('.info-box2').css('color',cortextodiv);-->
+<!--        $('.skew-1').css('background-color',skewscolor);-->
+<!--        $('.skew-2').css('background-color',skewscolor);-->
+<!--        $('.div-ball').css('background-color',divball);-->
+<!--        $('.div-ball').css('border',divballcontour);-->
+<!--        $('.icon-img1').css('background-image',icongradient1);-->
+<!--        $('.icon-img1-mobile').css('background-image',icongradient1);-->
+<!--        $('.icon-img2').css('background-image',icongradient2);-->
+<!--        $('.icon-img2-mobile').css('background-image',icongradient2);-->
+<!--        $('.icon-img3').css('background-image',icongradient3);-->
+<!--        $('.icon-img3-mobile').css('background-image',icongradient3);-->
+
+
+<!--     });-->
+
+<!--$('#salvar').click(function(){-->
+<!--    localStorage.setItem('gradientcolor', $('.info-box').css('border-image'));-->
+<!--    localStorage.setItem('gradientcolor', $('.info-box2').css('border-image')); -->
+
+<!--    localStorage.setItem('backgrounddiv', $('.info-box').css('background-color'));-->
+<!--    localStorage.setItem('backgrounddiv', $('.info-box2').css('background-color'));-->
+
+<!--    localStorage.setItem('backgroundbody', $('body').css('background-color'));-->
+<!--    localStorage.setItem('backgroundimage', $('.hero').css('background-image'));-->
+
+<!--    localStorage.setItem('cortexto', $('.middle-text').css('color'));-->
+
+<!--    localStorage.setItem('cortextodiv', $('.info-box').css('color'));-->
+<!--    localStorage.setItem('cortextodiv', $('.info-box2').css('color'));-->
+
+<!--    localStorage.setItem('skewscolor', $('.skew-1').css('background-color'));-->
+<!--    localStorage.setItem('skewscolor', $('.skew-2').css('background-color'));-->
+
+<!--    localStorage.setItem('divball', $('.div-ball').css('background-color'));-->
+<!--    localStorage.setItem('divballcontour', $('.div-ball').css('border'));-->
+
+<!--    localStorage.setItem('icongradient1', $('.icon-img1').css('background-image'));-->
+<!--    localStorage.setItem('icongradient1', $('.icon-img1-mobile').css('background-image'));-->
+
+<!--    localStorage.setItem('icongradient2', $('.icon-img2').css('background-image'));-->
+<!--    localStorage.setItem('icongradient2', $('.icon-img2-mobile').css('background-image'));-->
+
+<!--    localStorage.setItem('icongradient3', $('.icon-img3').css('background-image'));-->
+<!--    localStorage.setItem('icongradient3', $('.icon-img3-mobile').css('background-image'));-->
+
+
+<!--});-->
+
+<!-- });-->
+
+<!--</script>-->
+
+<!-- Hero on Large Resolution -->
+
+<div class="row d-none d-sm-block">
+
+<div class="col-md-12 hero">
+
+<!-- Menu -->
+
+<!-- Menu -->
+				<div class="row menu-content">
+
+					<a class="col-md-2 menu logo-menu" href="index.php"><img class="logo-alini" src="images/menu-icon.png"><b class="alini-text">MENU</b></a>
+					<div class="space-menu col-md-5 menu"></div>
+
+					<a class="menu-link col-md-1 hide menu active" href="index.php">
+						<img class="link-icon" src="images/home-icon.png">
+						<div class="overlay1">
+								<div class="overlay-text">Home</div>
+						</div>
+					</a>
+
+					<a class="menu-link col-md-1 hide menu" href="chatbot.php">
+						<img class="link-icon" src="images/chat-icon.png">
+						<div class="overlay1">
+								<div class="overlay-text">Chatbot</div>
+						</div>
+					</a>
+
+					<a class="menu-link col-md-1 hide menu open-theme" href="#">
+						<img class="link-icon" src="images/manual.png">
+						<div class="overlay1">
+								<div class="overlay-text">Manual</div>
+						</div>
+					</a>
+
+					<a class="menu-link col-md-1 hide menu" href="#">
+						<img class="link-icon" src="images/tag-icon.png">
+						<div class="overlay1">
+								<div class="overlay-text">Equipe</div>
+						</div>
+					</a>
+
+				</div>
+<!-- <img class="logo-svg" src="images/logo.svgz"> -->
+
+<div class="hero-text">
+
+	<div class="text-hero1"><br>
+
+		<h1 style="margin-bottom: -20px; margin-top: -8%;">A.L.I.N.I</h1>
+		<p style="font-size: 20px; font-family: Arvo;">Artificial Language Interpretator of<br> Natural Input</p><br><br>
+
+	</div>
+
+	<div class="text-hero2">
+		Conversando com<br> o Futuro!
+	</div>
+
+</div>
+
+</div>
+
+	<a href="#ball"><img class="arrow-down" src="images/arrowdown.png"></a>
+
+</div>
+
+<!-- Hero on Mobile Resolution-->
+
+<div class="row d-block d-sm-none">
+<div class="col-xs-12 hero" style="height:102vh;">
+
+<!-- Menu -->
+
+<div class="row menu-content">
+	<a class="col-2 menu logo-menu mobile-button" href="#"><img class="logo-alini" src="images/menu-icon.png"></a>
+</div>
+
+<div class="sidebar-menu">
+
+	<h1 class="sidemenu-title space-left-7" style="color: white; font-family: Abel; display: inline-block;">MENU</h1>
+	<a class="menu-close">X</a><br>
+
+	<div class="menu-item-mobile active-mobile">
+		<img class="link-icon space-left-65" src="images/home-icon.png">
+		<a class="menu-link menu align-mobile active-menu" href="index.html"><b>HOME</b></a>
+	</div>
+
+	<div class="menu-item-mobile">
+		<img class="link-icon space-left-8" src="images/chat-icon.png">
+		<a class="menu-link menu align-mobile " href="chatbot.php">CHATBOT</a>
+	</div>
+
+
+	<div class="menu-item-mobile">
+		<img class="link-icon space-left-8" src="images/manual.png">
+		<a class="menu-link menu align-mobile " href="#">MANUAL</a>
+	</div>
+
+	<div class="menu-item-mobile">
+		<img class="link-icon space-left-8" src="images/tag-icon.png">
+		<a class="menu-link menu align-mobile " href="#">EQUIPE</a>
+	</div>
+
+</div>
+
+	<center>
+
+		<div class="hero-text">
+			<div class="text-mobile-hero">
+					 <h1 style="margin: 25% 0 0 0; ">A.L.I.N.I</h1>
+				<p style="font-size: 18px; margin-top: -5px;">Artificial Language Interpretator of Natural Input</p>
+			</div>
+			<hr style="width: 65%; border: solid 1px #707dc7; margin-top: 20px; margin-bottom: 12px;">
+			<div class="text-mobile-hero2">
+				Conversando com<br> o Futuro!
+			</div>
+		</div>
+		<a href="#section1"><img class="arrow-down-mobile" src="images/arrowdown.png"></a>
+
+	</center>
+
+	</div>
+</div>
+
+<!-- Fim do Hero Mobile -->
+
+<!-- Skew de Estilo-->
+		<div class="row skew-content">
+			<div class="col-md-6 skew-1"></div>
+			<div class="col-md-6 skew-2 d-none d-sm-block"></div>
+		</div>
+
+<!-- Div com Texto & Skew caido pra direita -->
+
+<div class="row" id="section1">
+
+	<div class="div-ball d-none d-sm-block" id="ball"><img class="ball-icon" src="images/logonormal.png"></div>
+
+	<div class="col-md-12 info-box" style="box-shadow: -8px 10px 18px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+
+		<center class="endireita">
+			<br>
+			<h1 class="titulos">Quem é Alini?</h1><br>
+			<p class="skew-text" style="column-count:2;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Exce sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><br>
+
+			<a class="button-1" href="http://alini.pythonanywhere.com/">CONVERSE AGORA!</a><br><br><br><br>
+
+		</center>
+	</div>
+
+
+</div>
+
+<!-- Div com Texto Comum -->
+
+<div class="row middle-text">
+	<div class="col-md-10 offset-md-1 text-box d-none d-sm-block">
+		<center>
+			<h2 class="titulos-kaushan">Título</h2> <p class="space-bottom-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</center>
+	</div>
+
+	<div class="col-md-8 offset-md-2 text-box-mobile d-block d-sm-none">
+		<center>
+			<h2 class="titulos-kaushan">Título</h2>
+			<p class="space-bottom-5 text-skills">aaaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</center>
+	</div>
+
+</div>
+
+<!-- Div com Texto & Skew caido pra esquerda -->
+
+<div class="row">
+	<div class="col-md-12 info-box2" style="box-shadow: 18px 10px -18px 8px rgba(0, 0, 0, 0.2), 20px 6px 20px 6px rgba(0, 0, 0, 0.19)">
+
+		<center class="endireita2">
+
+		<h1 class="space-top-3 titulos-kaushan">GT Walshiem</h1><br>
+			<p class="skew-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</center>
+	</div>
+
+</div>
+
+<!-- Row com Informações e Icone 1 -->
+<div class="row informative">
+	<div class="col-md-2 offset-md-1 icon-img1 d-none d-sm-block"></div>
+	<div class="col-8 offset-2 icon-img1-mobile d-block d-sm-none"></div>
+
+
+	<div class="col-md-7 col-xs-12 offset-md-1 info-text middle-text">
+		<center>
+			<h2  class="info-title">I N T U I T I V O</h2>
+			<p class="text-skills">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> </center> </div> </div>
+
+<!-- Row com Informações e Icone 2 -->
+
+<div class="row informative">
+
+	<div class="col-8 offset-2 icon-img2-mobile d-block d-sm-none"></div>
+
+	<div class="col-md-7 offset-md-1 info-text middle-text">
+	<center>
+		<h2 class="info-title">E F I C I E N T E</h2>
+		<p class="text-skills">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</center>
+		</div>
+
+		<div class="col-md-2 offset-md-1 icon-img2 d-none d-sm-block"></div>
+
+		</div>
+
+<!-- Row com Informações e Icone 3 -->
+
+<div class="row informative">
+
+	<div class="col-md-2 offset-md-1 icon-img3 d-none d-sm-block"></div>
+	<div class="col-8 offset-2 icon-img3-mobile d-block d-sm-none"></div>
+	<div class="col-md-7 offset-md-1 info-text middle-text">
+	<center>
+		<h2  class="info-title">D I V E R T I D O</h2>
+		<p class="text-skills">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</center>
+	</div>
+
+</div>
+
+<!-- Footer -->
+<!-- Skew do Footer -->
+		<div class="row">
+			<div class="col-md-12 skew-footer"></div>
+		</div>
+
+		<!-- Footer Parte 1: Sobre nós -->
+		<div class="row">
+			<div class="col-md-5 footer">
+
+				<h2>
+					<img  class="footer-icons" src="images/lamp.png">
+					SOBRE A.L.I.N.I. ...
+				</h2>
+				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
+				<div class="footer-adjust">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.<br><br>
+				</div><br>
+				<b style=" float: right; padding-right: 20px;">- 3MIN1, (2018)</b>
+
+			</div>
+
+			<!-- Footer Parte 2: Redes Sociais -->
+			<div class="col-md-4 footer">
+
+				<h2>
+					<img  class="footer-icons" src="images/social.png">
+					REDES SOCIAIS
+				</h2>
+				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
+				<div class="footer-adjust">
+					<img class="social-icons" src="images/phone.png"><span class="social-links">(13)4002-8922</span><br>
+					<img class="social-icons" src="images/mail.png"><span class="social-links">contato.alini@gmail.com</span><br>
+					<img class="social-icons" src="images/fb.png"><span class="social-links">facebook.com/ALINIChatbot</span><br>
+					<img class="social-icons" src="images/instagram-icon.png"><span class="social-links">instagram.com/alinichatbot</span><br>
+				</div>
+
+			</div>
+
+			<!-- Footer Parte 3: Navegação -->
+			<div class="col-md-3 footer d-none d-sm-block">
+
+				<h2>
+					<img  class="footer-icons" src="images/map.png">
+					NAVEGAÇÃO
+				</h2>
+				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
+
+				<div class="footer-adjust">
+					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspHome</span></a><br>
+					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspChatbot</span></a><br>
+					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspContato</span></a><br>
+					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspEquipe</span></a><br>
+				</div>
+
+			</div>
+
+			<div class="col-md-3 footer d-block d-sm-none" style="height: 230px">
+
+				<h2>
+					<img  class="footer-icons" src="images/map.png">
+					NAVEGAÇÃO
+				</h2>
+				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
+
+				<div class="footer-adjust">
+					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspHome</span></a><br>
+					<a href="#section1" class="nav-item"> • <span class="nav-text">&nbsp&nbspChatbot</span></a><br>
+					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspContato</span></a><br>
+					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspEquipe</span></a><br>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Footer Parte 4: Créditos e Extras -->
+		<div class="row">
+			<div class="col-md-12 footer-down">
+				<b style="float; left;">Etec de Itanhaém &nbsp|&nbsp  2018 &nbsp©</b>
+				<b style="float: right;">A . L . I . N . I<img  class="final-icon" src="images/lamp.png"></b>
+			</div>
+		</div>
+<!-- Fim do Container-Fluid -->
+	</div>
+
+</body>
+</html>
+
+<!-- Importação do JQuery -->
+
+<script src="css/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+
+				$('.space-menu').toggleClass("col-md-6", 1000, "easeOutQuint");
+				$('.hide').fadeToggle("fast");
+
+				$('.mobile-button').click(function(){
+						$('.sidebar-menu').addClass("hide-animation-menu");
+				});
+
+				$('.menu-close, .sidemenu-title').click(function(){
+						$('.sidebar-menu').removeClass("hide-animation-menu");
+				});
+
+				$('.tab').click(function(){
+						$('.themes').addClass('show-div')
+				});
+
+				$('.close-theme').click(function(){
+						$('.themes').removeClass('show-div')
+				});
+
+	});
+</script>
