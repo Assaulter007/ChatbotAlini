@@ -7,21 +7,21 @@ app = Flask(__name__)
 
 bot = ChatBot(
     'Alini',
+    read_only=True,
 	storage_adapter='chatterbot.storage.SQLStorageAdapter',
 	logic_adapters=[
 		{
 			'import_path' :  'chatterbot.logic.BestMatch',
 			'response_selection_method' :  'chatterbot.response_selection.get_random_response'
 		},
-		'chatterbot.logic.MathematicalEvaluation',
-		'chatterbot.logic.TimeLogicAdapter'
+		'chatterbot.logic.MathematicalEvaluation'
 	],
 	tie_breaking_method='random_response'
 )
 
 bot.set_trainer(ChatterBotCorpusTrainer)
 
-bot.train("./corpus/")
+bot.train("Chatbot_Alini/corpus/")
 
 @app.route("/")
 def home():
