@@ -1,40 +1,266 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Chatbot</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Fav Icon -->
+	<link rel="shortcut icon" href="static/images/logonormal.png" />
+	<!-- Relacionando com o CSS de Estilo -->
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<!-- Importando BootStrap -->
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap-grid.css">
+	<!-- Fontes Show -->
+	<link href="https://fonts.googleapis.com/css?family=Contrail+One|Allan|Kaushan+Script|Oswald|Roboto+Slab|Abel" rel="stylesheet">
+	<!-- Cor da Barra de Endereço MOBILE -->
+    <meta name="theme-color" content="#333">
+    <!-- AJAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="/static/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
 
-        <title>Chat</title>
-    </head>
+<body>
+	<div class="container-fluid d-none d-sm-block">
 
-    <body>
-        <div id="menu_bar">
-            <a href="#"><div id="menu_icon" class="icons"></div></a>
-            
-            <input id="color" type="color" value="#009688">
+		<!-- Menu -->
+				<div class="row menu-content-2">
 
-            <div id="lixeira_icon" class="icons"></div>
+					<a class="col-md-2 menu logo-menu" href="../static/home.html"><img class="logo-alini" src="static/images/menu-icon.png"><b class="alini-text">MENU</b></a>
+					<div class="space-menu col-md-5 menu"></div>
 
-            <div id="pincel_icon" class="icons"></div>
-        </div>
+					<a class="menu-link col-md-1 hide menu" href="static/home.html">
+						<img class="link-icon" src="static/images/home-icon.png">
+						<div class="overlay1">
+								<div class="overlay-text">Home</div>
+						</div>
+					</a>
 
-        <div id="nav">
-            <div id="chatbox">
-                <div class="chatText botText">Obrigada por vir, eu já estava começando a me sentir sozinha</div>
-            </div>
+					<a class="menu-link col-md-1 hide menu active" href="http://alini.pythonanywhere.com">
+						<img class="link-icon" src="static/images/chat-icon.png">
+						<div class="overlay1">
+								<div class="overlay-text">Chatbot</div>
+						</div>
+					</a>
 
-            <form id="userInput" action="" onsubmit="getBotResponse();return false;">
-                <input id="textInput" type="text" name="msg" onfocus="on" pattern="[A-zÀ-ú0-9 !?]+" maxlength="50" placeholder="Digite Sua Mensagem Aqui" required="required" autocomplete="off" title="Use somente letras e números">
-                <input id="buttonInput" type="submit" value="Enviar">
-            </form>
+					<a class="menu-link col-md-1 hide menu open-theme" href="static/manual.html">
+						<img class="link-icon" src="static/images/manual.png">
+						<div class="overlay1">
+								<div class="overlay-text">Manual</div>
+						</div>
+					</a>
 
-            <div id="imagem">
-            </div>
-        </div>
+					<a class="menu-link col-md-1 hide menu" href="static/equipe.html">
+						<img class="link-icon" src="static/images/tag-icon.png">
+						<div class="overlay1">
+								<div class="overlay-text">Equipe</div>
+						</div>
+					</a>
 
-        <script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script>
-    </body>
+				</div>
+			<!-- Fim do Menu -->
+
+		<div class="row full-chat-content">
+
+			<div class="col-md-1 alini-content"><img src="static/images/alinir.PNG" class="alini-avatar"></div>
+			<div class="col-md-2 skew"></div>
+			<div class="col-md-9" id="chat">
+					<div id="chat-container">
+						<div class="row">
+								<div class="col-md-6 offset-md-2 msg-box-received">Olá! Obrigada por vir, já estava começando a me sentir sozinha!</div>
+						</div>
+					</div>
+				<form id="userInput" onsubmit="getBotResponse(); return false;">
+					<input class="input-msg" id="textInput" type="text" name="msg" minlength="2" maxlength="300" placeholder="Digite Sua Mensagem" required="required" autocomplete="off">
+					<input class="chat-button" id="buttonInput" type="submit" value="►">
+				</form>
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+			<!-- Skew do Footer -->
+		<div class="row">
+			<div class="col-md-12 skew-footer"></div>
+		</div>
+
+		<!-- Footer Parte 1: Sobre nós -->
+		<div class="row">
+			<div class="col-md-5 footer">
+
+				<h2>
+					<img  class="footer-icons" src="static/images/lamp.png">
+					SOBRE A.L.I.N.I. ...
+				</h2>
+				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
+				<div class="footer-adjust">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.<br><br>
+				</div><br>
+				<b style=" float: right; padding-right: 20px;">- 3MIN1, (2018)</b>
+
+			</div>
+
+			<!-- Footer Parte 2: Redes Sociais -->
+			<div class="col-md-4 footer">
+
+				<h2>
+					<img  class="footer-icons" src="static/images/social.png">
+					REDES SOCIAIS
+				</h2>
+				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
+				<div class="footer-adjust">
+					<img class="social-icons" src="static/images/phone.png"><span class="social-links">(13)4002-8922</span><br>
+					<img class="social-icons" src="static/images/mail.png"><span class="social-links">contato.alini@gmail.com</span><br>
+					<img class="social-icons" src="static/images/fb.png"><span class="social-links">facebook.com/ALINIChatbot</span><br>
+					<img class="social-icons" src="static/images/Instagram-icon.png"><span class="social-links">instagram.com/alinichatbot</span><br>
+				</div>
+
+			</div>
+
+			<!-- Footer Parte 3: Navegação -->
+			<div class="col-md-3 footer d-none d-sm-block">
+
+				<h2>
+					<img  class="footer-icons" src="static/images/map.png">
+					NAVEGAÇÃO
+				</h2>
+				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
+
+				<div class="footer-adjust">
+					<a href="static/home.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspHome</span></a><br>
+					<a href="http://alini.pythonanywhere.com" class="nav-item"> • <span class="nav-text">&nbsp&nbspChatbot</span></a><br>
+					<a href="static/manual.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspManual</span></a><br>
+					<a href="static/equipe.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspEquipe</span></a><br>
+				</div>
+
+			</div>
+
+			<div class="col-md-3 footer d-block d-sm-none" style="height: 230px">
+
+				<h2>
+					<img  class="footer-icons" src="static/images/map.png">
+					NAVEGAÇÃO
+				</h2>
+				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
+
+				<div class="footer-adjust">
+					<a href="static/home.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspHome</span></a><br>
+					<a href="http://alini.pythonanywhere.com" class="nav-item"> • <span class="nav-text">&nbsp&nbspChatbot</span></a><br>
+					<a href="static/manual.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspManual</span></a><br>
+					<a href="static/equipe.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspEquipe</span></a><br>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Footer Parte 4: Créditos e Extras -->
+		<div class="row">
+			<div class="col-md-12 footer-down">
+				<b style="float; left;">Etec de Itanhaém &nbsp|&nbsp  2018 &nbsp©</b>
+				<b style="float: right;">A . L . I . N . I<img  class="final-icon" src="static/images/lamp.png"></b>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- MOBILE VERSION -->
+	<div class="container-fluid d-block d-sm-none" style="background-image: url('static/images/chat-back4.jpg'); background-position-x: 57%;">
+
+		<div class="row">
+				<div class="col-12 chat-topbar">
+					<div class="row">
+							<div class="col-2">
+									<img src="static/images/bucetchek.jpeg" class="profile-pic">
+							</div>
+
+							<div class="col-8"><p style="font-size: 16px;">ALINI</p></div>
+
+							<div class="col-2 ">
+									<a href="#"><img src="static/images/menu-icon.png" class="chat-options"></a>
+							</div>
+					</div>
+				</div>
+		</div>
+
+		<div class="row">
+				<div class="col-12" id="chat-container">
+					<div class="row">
+							<div class="col-md-6 offset-md-2 msg-box-received">Olá! Obrigada por vir, já estava começando a me sentir sozinha!</div>
+					</div>
+				</div>
+		</div>
+
+		<div class="row input-mobile">
+				<div class="col-12">
+					<form id="userInput" onsubmit="getBotResponse(); return false;">
+						<input class="input-msg" id="textInput" style="margin-left: -1%; width: 90%;"	type="text" name="msg" minlength="2" maxlength="300" placeholder="Digite Sua Mensagem" required="required" autocomplete="off">
+						<input class="chat-button" style="margin-left: 5px;" id="buttonInput" type="submit" value="►">
+					</form>
+				</div>
+		</div><br>
+
+	</div>
+
+	<!-- Importando JS de BackEnd -->
+    <script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script>
+
+	<!-- JQuery de Funções do CSS -->
+    <script>
+	$(document).ready(function(){
+
+				$('.space-menu').toggleClass("col-md-6", 1000, "easeOutQuint");
+				$('.hide').fadeToggle("fast");
+
+				$('.mobile-button').click(function(){
+						$('.sidebar-menu').addClass("hide-animation-menu");
+				});
+
+				$('.menu-close, .sidemenu-title').click(function(){
+						$('.sidebar-menu').removeClass("hide-animation-menu");
+				});
+
+				$('.tab').click(function(){
+						$('.themes').addClass('show-div')
+				});
+
+				$('.close-theme').click(function(){
+						$('.themes').removeClass('show-div')
+				});
+
+				$('.theme-1').click(function(){
+					alert('tema1');
+				});
+
+				$('.theme-2').click(function(){
+					alert('tema2');
+				});
+
+				$('.theme-3').click(function(){
+					alert('tema3');
+				});
+
+				$('.theme-4').click(function(){
+					alert('tema4');
+				});
+
+				$('.save-theme').click(function(){
+					alert('Tema Salvo com Sucesso!');
+				});
+
+	});
+</script>
+
+</body>
+
 </html>
+
+<style type="text/css">
+
+	.skew-footer{
+		margin-top: 100px;
+	}
+
+</style>
