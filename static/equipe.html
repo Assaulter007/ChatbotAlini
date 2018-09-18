@@ -34,8 +34,8 @@
 					<h1 class="sidemenu-title space-left-7" style="color: white; font-family: Abel; display: inline-block;">MENU</h1>
 					<a class="menu-close">X</a><br>
 
-					<div class="menu-item-mobile active-mobile">
-						<img class="link-icon space-left-65" src="images/home-icon.png">
+					<div class="menu-item-mobile">
+						<img class="link-icon space-left-8" src="images/home-icon.png">
 						<a class="menu-link menu align-mobile" href="home.html"><b>HOME</b></a>
 					</div>
 
@@ -50,7 +50,7 @@
 						<a class="menu-link menu align-mobile " href="manual.html">MANUAL</a>
 					</div>
 
-					<div class="menu-item-mobile">
+					<div class="menu-item-mobile active-mobile">
 						<img class="link-icon space-left-8" src="images/tag-icon.png">
 						<a class="menu-link menu align-mobile active-menu" href="equipe.html">EQUIPE</a>
 					</div>
@@ -95,12 +95,12 @@
 
 				<div class="hero-text">
 					<div class="text-mobile-hero">
-					  	<h1 style="margin: 25% 0 0 0; ">A.L.I.N.I</h1>
-						<p style="font-size: 18px; margin-top: -5px;">Artificial Language Interpretator of Natural Input</p>
+					  	<h1 class="titulo-equipe" style="margin: 10% 0 0 0; ">EQUIPE DE PRODUÇÃO</h1>
+						<p style="font-size: 18px; margin-top: -5px;">Responsáveis pela Concepção do Projeto</p>
 					</div>
 					<hr style="width: 65%; border: solid 1px #707dc7; margin-top: 20px; margin-bottom: 12px;">
 					<div class="text-mobile-hero2">
-						Conversando com<br> o Futuro!
+						Converse com<br> o Futuro agora!
 					</div>
 				</div>
 				<a href="#section1"><img class="arrow-down-mobile" src="images/arrowdown.png"></a>
@@ -245,9 +245,9 @@
 								<button class="button-staff-6">MAIS +</button>
 						</center>
 				</div>
-		</div>
+		</div><br>
 
-		<center><a href="#hero" class="button-staff">VOLTAR AO TOPO</a></center>
+		<center><a href="#hero" id="back-to-top" class="button-staff">VOLTAR AO TOPO</a></center>
 
 		<!-- Footer -->
 		<!-- Skew do Footer -->
@@ -431,7 +431,31 @@
 	}
 
 	.hero-text{
-		margin-top: 11%;
+		margin-top: 10%;
 	}
+
+	/* Mobile Version */
+    @media not all and (min-width: 765px) {
+
+        .staff-profile{
+            margin-top: 30%;
+        }
+
+        .hero-text{
+            margin-top: -3% !important;
+        }
+
+        .arrow-down-mobile {
+            top: 80%;
+        }
+
+        .titulo-equipe{
+            margin-top: 0%;
+        }
+
+        #back-to-top{
+            display: none;
+        }
+    }
 
 </style>

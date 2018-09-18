@@ -1,0 +1,236 @@
+/* Mobile Version */
+@media not all and (min-width: 765px) {
+
+.menu-content-2, .footer, .skew-footer, .footer-down, .alini-content, .skew{
+	display: none !important;
+}
+
+.full-chat-content{
+	margin: 0;
+}
+
+.container-fluid{
+	background-image: url('../images/chat-back4.jpg');
+    background-position: 85% 90%;
+}
+
+.input-msg{
+	width: 90%;
+	transform: skew(10deg, 0deg);
+	font-size: 18px;
+	margin-left: -5px;
+  border: none;
+  color: white;
+  font-family: Abel;
+  border-bottom: solid 2px #ff8a8a;
+  padding-right: 10px;
+  padding-left: 20px;
+  padding: 5px 10px 5px 20px;
+  border-radius: 3px;
+  background-color: rgba(255,255,255,0.3);
+  font-style: italic;
+	position: relative;
+	z-index: 5;
+}
+
+.input-msg:focus{
+	outline:none !important;
+	border-bottom: solid 2.5px #8ac4ff;
+	transition: ease-in-out all 0.3s;
+}
+
+.input-msg::placeholder{
+	color: white;
+	background-image: url(../images/tag-icon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	padding-left: 30px;
+}
+
+.chat-button{
+	background-color: #4d5fc3;
+	color:white;
+	font-family: Abel;
+	font-size:15px;
+	border-radius: 100%;
+	height: 35px;
+	width: 35px;
+	border: none;
+	margin-left: 0px;
+}
+
+.chat-button:active{
+    background-color:  #818dce;
+    transition: ease-in-out all 0.3s;
+}
+
+.profile-pic{
+	height: 50px;
+	border-radius: 100%;
+	margin: 10px;
+}
+
+.msg-box-received{
+	background-color: rgba(94, 109, 189, 0.6);
+	color: white;
+	font-family: Abel;
+	font-size: 18px;
+	height: auto;
+	padding: 5px;
+	margin: 0px 0 5px 7%;
+	border-radius:0px 0px 5px 5px;
+	z-index: 0;
+}
+
+.msg-box-received:after {
+	content: '';
+	position: absolute;
+	left: 5px;
+	top: 10px;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-right-color: rgba(94, 109, 189, 0.6);
+	border-left: 0;
+	border-top: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+	z-index: 5;
+}
+
+
+.msg-box-sended{
+	background-color: rgba(94, 189, 170, 0.6);
+	color: white;
+	font-family: Abel;
+	text-align: right;
+	font-size: 18px;
+	height: auto;
+	padding: 5px;
+	margin: 0% 7% 5px 0%;
+	border-radius: 0px 0 5px 5px;
+}
+
+.msg-box-sended:after {
+	content: '';
+	position: absolute;
+	right: 3px;
+	top: 0;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-left-color: rgba(94, 189, 170, 0.6);
+	border-right: 0;
+	border-top: 0;
+	margin-right: -18px;
+}
+
+.skew-straighter{
+	transform: skew(0deg, -10deg);
+	padding: 120px 0 160px 0;
+}
+
+.skew-straighter-2{
+	transform: skew(0deg, 10deg);
+	padding: 120px 0 160px 0;
+}
+
+.menu-chat-mobile{
+	position: fixed;
+	top: 0;
+	height: 70px;
+	width: 100%;
+	display: inline-flex;
+	margin-left: -15px;
+	background-color: #333;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: white;
+}
+
+.chat-options{
+	height: 30px;
+	position: absolute;
+	width: 40px;
+	right: 20px;
+	top: 20px;
+}
+
+#chat{
+	height: 100vh;
+}
+
+#chat-container{
+	height: 90%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-top: 80px;
+	padding-right: 5px;
+	margin-bottom: 10px;
+}
+
+#chat-container::-webkit-scrollbar-thumb{
+	background: rgba(255,255,255,0.3);
+}
+
+#chat-container::-webkit-scrollbar{
+	width: 3px;
+}
+
+.warning{
+    position: absolute;
+    background-color: #333;
+    border-radius: 2px;
+	top: 16%;
+	width: 100%;
+	margin-left: -15px;
+    padding: 0 25px 0 25px;
+    height: 195px;
+    text-align: center;
+    box-shadow: -4px 3px 20px 99999px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    transition: 0.3 ease-in-out all 0.3s;
+	animation-name: warning-show;
+	animation-duration: 3s;
+	border-top: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+@keyframes warning-show{
+	0%{top: -40%;}
+	100%{top: 16%;}
+
+}
+
+.close-warning{
+    border: none;
+    background-color: white;
+    color: #dc5353;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    padding-left: 5px;
+    top: -10px;
+    right: 85px;
+}
+
+.button-warning{
+  background-color: #414b84;
+	padding: 5px 55px;
+	border-radius: 2px;
+	font-size: 18px;
+	color: white;
+	border: none;
+	margin-top: 15px;
+	font-family: Abel;
+	cursor: pointer;
+	transition: ease-in-out all 0.3s;
+}
+
+.down-icon{
+	height: 20px;
+    margin: 0px 5px -3px 0;
+}
+
+}

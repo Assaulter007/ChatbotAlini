@@ -8,6 +8,8 @@
 	<link rel="shortcut icon" href="static/images/logonormal.png" />
 	<!-- Relacionando com o CSS de Estilo -->
 	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<!-- Relacionando com o CSS do Mobile -->
+	<link rel="stylesheet" type="text/css" href="static/css/style-mobile.css">
 	<!-- Importando BootStrap -->
 	<link rel="stylesheet" type="text/css" href="static/css/bootstrap-grid.css">
 	<!-- Fontes Show -->
@@ -20,7 +22,7 @@
 </head>
 
 <body>
-	<div class="container-fluid d-none d-sm-block">
+	<div class="container-fluid">
 
 		<!-- Menu -->
 				<div class="row menu-content-2">
@@ -66,7 +68,7 @@
 			<div class="col-md-9" id="chat">
 					<div id="chat-container">
 						<div class="row">
-								<div class="col-md-6 offset-md-2 msg-box-received">Olá! Obrigada por vir, já estava começando a me sentir sozinha!</div>
+								<div class="col-8 col-md-7 offset-md-1 msg-box-received">Olá! Obrigada por vir, já estava começando a me sentir sozinha!</div>
 						</div>
 					</div>
 				<form id="userInput" onsubmit="getBotResponse(); return false;">
@@ -75,7 +77,27 @@
 				</form>
 			</div>
 
-		</div>
+	 </div>
+
+    <div class="menu-chat-mobile">
+      <img class="profile-pic" src="static/images/alini-profile.jpg">
+        <div style="margin: 20px 0 0 15px;">
+        <p style="margin: 0 0 -7px 0">A.L.I.N.I</p>
+        <span style="color: green; margin-left: -10px;">•</span>
+        <span style="font-size:12px; color:#d2cdcd;">Online</span>
+      </div>
+      <a href="static/home.html"><img src="static/images/menu-icon.png" class="chat-options"></a>
+    </div>
+
+    <div class='warning'>
+        <center>
+        <h2 style='color:#dc5353;'>AVISO!</h2>
+        <button class="close-warning"><b>X</b></button>
+        <p>Para um melhor aproveitamento do sistema, baixe o app!</p>
+        <button class="button-warning">
+						<img src="static/images/download-icon.png" class="down-icon">BAIXAR</button>
+        </center>
+    </div>
 
 		<!-- Footer -->
 			<!-- Skew do Footer -->
@@ -120,24 +142,7 @@
 			</div>
 
 			<!-- Footer Parte 3: Navegação -->
-			<div class="col-md-3 footer d-none d-sm-block">
-
-				<h2>
-					<img  class="footer-icons" src="static/images/map.png">
-					NAVEGAÇÃO
-				</h2>
-				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
-
-				<div class="footer-adjust">
-					<a href="static/home.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspHome</span></a><br>
-					<a href="http://alini.pythonanywhere.com" class="nav-item"> • <span class="nav-text">&nbsp&nbspChatbot</span></a><br>
-					<a href="static/manual.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspManual</span></a><br>
-					<a href="static/equipe.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspEquipe</span></a><br>
-				</div>
-
-			</div>
-
-			<div class="col-md-3 footer d-block d-sm-none" style="height: 230px">
+			<div class="col-md-3 footer">
 
 				<h2>
 					<img  class="footer-icons" src="static/images/map.png">
@@ -166,43 +171,7 @@
 
 	</div>
 
-	<!-- MOBILE VERSION -->
-	<div class="container-fluid d-block d-sm-none" style="background-image: url('static/images/chat-back4.jpg'); background-position-x: 57%;">
 
-		<div class="row">
-				<div class="col-12 chat-topbar">
-					<div class="row">
-							<div class="col-2">
-									<img src="static/images/bucetchek.jpeg" class="profile-pic">
-							</div>
-
-							<div class="col-8"><p style="font-size: 16px;">ALINI</p></div>
-
-							<div class="col-2 ">
-									<a href="#"><img src="static/images/menu-icon.png" class="chat-options"></a>
-							</div>
-					</div>
-				</div>
-		</div>
-
-		<div class="row">
-				<div class="col-12" id="chat-container">
-					<div class="row">
-							<div class="col-md-6 offset-md-2 msg-box-received">Olá! Obrigada por vir, já estava começando a me sentir sozinha!</div>
-					</div>
-				</div>
-		</div>
-
-		<div class="row input-mobile">
-				<div class="col-12">
-					<form id="userInput" onsubmit="getBotResponse(); return false;">
-						<input class="input-msg" id="textInput" style="margin-left: -1%; width: 90%;"	type="text" name="msg" minlength="2" maxlength="300" placeholder="Digite Sua Mensagem" required="required" autocomplete="off">
-						<input class="chat-button" style="margin-left: 5px;" id="buttonInput" type="submit" value="►">
-					</form>
-				</div>
-		</div><br>
-
-	</div>
 
 	<!-- Importando JS de BackEnd -->
     <script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script>
@@ -210,6 +179,10 @@
 	<!-- JQuery de Funções do CSS -->
     <script>
 	$(document).ready(function(){
+
+				$('.close-warning').click(function(){
+						$('.warning').css("display", "none");
+				});
 
 				$('.space-menu').toggleClass("col-md-6", 1000, "easeOutQuint");
 				$('.hide').fadeToggle("fast");
@@ -250,6 +223,13 @@
 					alert('Tema Salvo com Sucesso!');
 				});
 
+				wHeight = $(window).height();
+				wWidth = $(window).width();
+				if(wWidth <	764){
+					$("#chat").css('height', wHeight);
+				}
+
+
 	});
 </script>
 
@@ -262,5 +242,7 @@
 	.skew-footer{
 		margin-top: 100px;
 	}
+
+	@media (max-width:575px) { body{ overflow-y: hidden;} }
 
 </style>

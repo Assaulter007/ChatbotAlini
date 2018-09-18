@@ -11,10 +11,10 @@
 <!-- Relacionando com o CSS de Estilo -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <!-- Fontes Show -->
-<link rel="stylesheet" type="text/css" href="fonts/Abel/Abel.css">
 <link href="https://fonts.googleapis.com/css?family=Contrail+One|Allan|Abel|Kaushan+Script|Oswald|Roboto+Slab" rel="stylesheet">
 <!-- Cor da Barra de Endereço MOBILE -->
 <meta name="theme-color" content="#333">
+<!-- Importando JQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
@@ -243,35 +243,33 @@
 <div class="col-md-12 hero">
 
 <!-- Menu -->
-
-<!-- Menu -->
 				<div class="row menu-content">
 
-					<a class="col-md-2 menu logo-menu" href="index.php"><img class="logo-alini" src="images/menu-icon.png"><b class="alini-text">MENU</b></a>
+					<a class="col-md-2 menu logo-menu" href="#"><img class="logo-alini" src="images/menu-icon.png"><b class="alini-text">MENU</b></a>
 					<div class="space-menu col-md-5 menu"></div>
 
-					<a class="menu-link col-md-1 hide menu active" href="index.php">
+					<a class="menu-link col-md-1 hide menu active" href="home.html">
 						<img class="link-icon" src="images/home-icon.png">
 						<div class="overlay1">
 								<div class="overlay-text">Home</div>
 						</div>
 					</a>
 
-					<a class="menu-link col-md-1 hide menu" href="chatbot.php">
+					<a class="menu-link col-md-1 hide menu" href="http://alini.pythonanywhere.com/">
 						<img class="link-icon" src="images/chat-icon.png">
 						<div class="overlay1">
 								<div class="overlay-text">Chatbot</div>
 						</div>
 					</a>
 
-					<a class="menu-link col-md-1 hide menu open-theme" href="#">
+					<a class="menu-link col-md-1 hide menu open-theme" href="manual.html">
 						<img class="link-icon" src="images/manual.png">
 						<div class="overlay1">
 								<div class="overlay-text">Manual</div>
 						</div>
 					</a>
 
-					<a class="menu-link col-md-1 hide menu" href="#">
+					<a class="menu-link col-md-1 hide menu" href="equipe.html">
 						<img class="link-icon" src="images/tag-icon.png">
 						<div class="overlay1">
 								<div class="overlay-text">Equipe</div>
@@ -279,14 +277,13 @@
 					</a>
 
 				</div>
-<!-- <img class="logo-svg" src="images/logo.svgz"> -->
 
 <div class="hero-text">
 
 	<div class="text-hero1"><br>
 
 		<h1 style="margin-bottom: -20px; margin-top: -8%;">A.L.I.N.I</h1>
-		<p style="font-size: 20px; font-family: Arvo;">Artificial Language Interpretator of<br> Natural Input</p><br><br>
+		<p style="font-size: 20px; ">Artificial Language Interpretator of<br> Natural Input</p><br><br>
 
 	</div>
 
@@ -303,64 +300,95 @@
 </div>
 
 <!-- Hero on Mobile Resolution-->
+		<div class="row d-block d-sm-none">
+			<div class="col-xs-12 hero" style="height:102vh;">
 
-<div class="row d-block d-sm-none">
-<div class="col-xs-12 hero" style="height:102vh;">
+				<!-- Menu -->
+				<div class="row menu-content">
+					<a class="col-2 menu logo-menu mobile-button" href="#"><img class="logo-alini" src="images/menu-icon.png"></a>
+				</div>
 
-<!-- Menu -->
+				<div class="sidebar-menu">
+					<h1 class="sidemenu-title space-left-7" style="color: white; font-family: Abel; display: inline-block;">MENU</h1>
+					<a class="menu-close">X</a><br>
 
-<div class="row menu-content">
-	<a class="col-2 menu logo-menu mobile-button" href="#"><img class="logo-alini" src="images/menu-icon.png"></a>
-</div>
+					<div class="menu-item-mobile active-mobile">
+						<img class="link-icon space-left-8" src="images/home-icon.png">
+						<a class="menu-link menu align-mobile active-menu" href="home.html"><b>HOME</b></a>
+					</div>
 
-<div class="sidebar-menu">
-
-	<h1 class="sidemenu-title space-left-7" style="color: white; font-family: Abel; display: inline-block;">MENU</h1>
-	<a class="menu-close">X</a><br>
-
-	<div class="menu-item-mobile active-mobile">
-		<img class="link-icon space-left-65" src="images/home-icon.png">
-		<a class="menu-link menu align-mobile active-menu" href="index.html"><b>HOME</b></a>
-	</div>
-
-	<div class="menu-item-mobile">
-		<img class="link-icon space-left-8" src="images/chat-icon.png">
-		<a class="menu-link menu align-mobile " href="chatbot.php">CHATBOT</a>
-	</div>
+					<div class="menu-item-mobile">
+						<img class="link-icon space-left-8" src="images/chat-icon.png">
+						<a class="menu-link menu align-mobile " href="http://alini.pythonanywhere.com/">CHATBOT</a>
+					</div>
 
 
-	<div class="menu-item-mobile">
-		<img class="link-icon space-left-8" src="images/manual.png">
-		<a class="menu-link menu align-mobile " href="#">MANUAL</a>
-	</div>
+					<div class="menu-item-mobile">
+						<img class="link-icon space-left-8" src="images/manual.png">
+						<a class="menu-link menu align-mobile " href="manual.html">MANUAL</a>
+					</div>
 
-	<div class="menu-item-mobile">
-		<img class="link-icon space-left-8" src="images/tag-icon.png">
-		<a class="menu-link menu align-mobile " href="#">EQUIPE</a>
-	</div>
+					<div class="menu-item-mobile">
+						<img class="link-icon space-left-8" src="images/tag-icon.png">
+						<a class="menu-link menu align-mobile " href="equipe.html">EQUIPE</a>
+					</div>
 
-</div>
+					<div class="theme-container">
+						<center>
+						<h2 style="margin-bottom: 3px;">
+							<img class="theme-icon" src="images/theme-icon.png" style="margin-left: -20px; height: 25px;">
+							TEMAS
+						</h2>
+						<p style="margin: 5px 0 0 0;">Você pode escolher a paleta de cores do site a tua própria maneira, faça bom uso e deixe o site com a sua cara!</p>
+						<hr style="border: solid 1px #414b84; width: 75%; margin-bottom: 0px;">
 
-	<center>
+						<div>
+							<div style="width: 50%; float: left;">
+								<div class="theme-1"><br><br><img class="theme-icon2" src="images/theme-icon.png"></div>
+							</div>
 
-		<div class="hero-text">
-			<div class="text-mobile-hero">
-					 <h1 style="margin: 25% 0 0 0; ">A.L.I.N.I</h1>
-				<p style="font-size: 18px; margin-top: -5px;">Artificial Language Interpretator of Natural Input</p>
-			</div>
-			<hr style="width: 65%; border: solid 1px #707dc7; margin-top: 20px; margin-bottom: 12px;">
-			<div class="text-mobile-hero2">
-				Conversando com<br> o Futuro!
+							<div style="width: 50%; float: right;">
+								<div class="theme-2"><br><br><img class="theme-icon2" src="images/theme-icon.png"></div>
+							</div>
+						</div>
+
+						<div>
+							<div style="width: 50%; float: left;">
+								<div class="theme-3"><br><br><img class="theme-icon2" src="images/theme-icon.png"></div>
+							</div>
+
+							<div style="width: 50%; float: right;">
+								<div class="theme-4" style="margin-bottom: 15px;"><br><br><img class="theme-icon2" src="images/theme-icon.png"></div>
+							</div><br>
+						</div><br>
+
+						<hr style="border: solid 1px #414b84; width: 75%;">
+						<p>Não se esqueça de salvar suas alterações!</p>
+						<button class="save-theme button-1 button-1plus" style="margin-top: 0px; margin-bottom: 20px;">SALVAR</button><br>
+						</center>
+					</div>
+
+				</div>
+				<center>
+
+				<div class="hero-text">
+					<div class="text-mobile-hero">
+					  	<h1 style="margin: 10% 0 0 0; ">A.L.I.N.I</h1>
+						<p style="font-size: 18px; margin-top: -5px;">Artificial Language Interpretator of Natural Input</p>
+					</div>
+					<hr style="width: 65%; border: solid 1px #707dc7; margin-top: 20px; margin-bottom: 12px;">
+					<div class="text-mobile-hero2">
+						Conversando com<br> o Futuro!
+					</div>
+				</div>
+				<a href="#section1"><img class="arrow-down-mobile" src="images/arrowdown.png"></a>
+
+				</center>
+
 			</div>
 		</div>
-		<a href="#section1"><img class="arrow-down-mobile" src="images/arrowdown.png"></a>
 
-	</center>
-
-	</div>
-</div>
-
-<!-- Fim do Hero Mobile -->
+		<!-- Fim do Hero Mobile -->
 
 <!-- Skew de Estilo-->
 		<div class="row skew-content">
@@ -372,14 +400,14 @@
 
 <div class="row" id="section1">
 
-	<div class="div-ball d-none d-sm-block" id="ball"><img class="ball-icon" src="images/logonormal.png"></div>
+	<div class="div-ball d-none d-sm-block" id="ball"><img class="ball-icon" src="images/sms.png"></div>
 
 	<div class="col-md-12 info-box" style="box-shadow: -8px 10px 18px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
 
 		<center class="endireita">
 			<br>
 			<h1 class="titulos">Quem é Alini?</h1><br>
-			<p class="skew-text" style="column-count:2;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Exce sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><br>
+			<p class="skew-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Exce sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><br>
 
 			<a class="button-1" href="http://alini.pythonanywhere.com/">CONVERSE AGORA!</a><br><br><br><br>
 
@@ -391,28 +419,22 @@
 
 <!-- Div com Texto Comum -->
 
+<br class="d-block d-sm-none">
 <div class="row middle-text">
-	<div class="col-md-10 offset-md-1 text-box d-none d-sm-block">
+	<div class="col-md-10 offset-md-1 text-box">
 		<center>
 			<h2 class="titulos-kaushan">Título</h2> <p class="space-bottom-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</center>
 	</div>
-
-	<div class="col-md-8 offset-md-2 text-box-mobile d-block d-sm-none">
-		<center>
-			<h2 class="titulos-kaushan">Título</h2>
-			<p class="space-bottom-5 text-skills">aaaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</center>
-	</div>
-
 </div>
+<br class="d-block d-sm-none">
 
 <!-- Div com Texto & Skew caido pra esquerda -->
 
 <div class="row">
 	<div class="col-md-12 info-box2" style="box-shadow: 18px 10px -18px 8px rgba(0, 0, 0, 0.2), 20px 6px 20px 6px rgba(0, 0, 0, 0.19)">
 
-		<center class="endireita2">
+		<center class="endireita-2">
 
 		<h1 class="space-top-3 titulos-kaushan">GT Walshiem</h1><br>
 			<p class="skew-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -434,7 +456,7 @@
 
 <!-- Row com Informações e Icone 2 -->
 
-<div class="row informative">
+<div class="row informative-2">
 
 	<div class="col-8 offset-2 icon-img2-mobile d-block d-sm-none"></div>
 
@@ -451,7 +473,7 @@
 
 <!-- Row com Informações e Icone 3 -->
 
-<div class="row informative">
+<div class="row informative-2">
 
 	<div class="col-md-2 offset-md-1 icon-img3 d-none d-sm-block"></div>
 	<div class="col-8 offset-2 icon-img3-mobile d-block d-sm-none"></div>
@@ -465,7 +487,7 @@
 </div>
 
 <!-- Footer -->
-<!-- Skew do Footer -->
+		<!-- Skew do Footer -->
 		<div class="row">
 			<div class="col-md-12 skew-footer"></div>
 		</div>
@@ -500,8 +522,8 @@
 				<div class="footer-adjust">
 					<img class="social-icons" src="images/phone.png"><span class="social-links">(13)4002-8922</span><br>
 					<img class="social-icons" src="images/mail.png"><span class="social-links">contato.alini@gmail.com</span><br>
-					<img class="social-icons" src="images/fb.png"><span class="social-links">facebook.com/ALINIChatbot</span><br>
-					<img class="social-icons" src="images/instagram-icon.png"><span class="social-links">instagram.com/alinichatbot</span><br>
+					<a href="https://www.facebook.com/ALINIChatbot"><img class="social-icons" src="images/fb.png"><span class="social-links">facebook.com/ALINIChatbot</span></a><br>
+					<a href="https://www.instagram.com/alinichatbot"><img class="social-icons" src="images/Instagram-icon.png"><span class="social-links">instagram.com/alinichatbot</span></a><br>
 				</div>
 
 			</div>
@@ -516,10 +538,10 @@
 				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
 
 				<div class="footer-adjust">
-					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspHome</span></a><br>
-					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspChatbot</span></a><br>
-					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspContato</span></a><br>
-					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspEquipe</span></a><br>
+					<a href="home.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspHome</span></a><br>
+					<a href="http://alini.pythonanywhere.com/" class="nav-item"> • <span class="nav-text">&nbsp&nbspChatbot</span></a><br>
+					<a href="manual.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspManual</span></a><br>
+					<a href="equipe.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspEquipe</span></a><br>
 				</div>
 
 			</div>
@@ -533,10 +555,10 @@
 				<hr style="border: solid 1.5px #414b84; margin-top: -10px;"><br>
 
 				<div class="footer-adjust">
-					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspHome</span></a><br>
-					<a href="#section1" class="nav-item"> • <span class="nav-text">&nbsp&nbspChatbot</span></a><br>
-					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspContato</span></a><br>
-					<a href="#" class="nav-item"> • <span class="nav-text">&nbsp&nbspEquipe</span></a><br>
+					<a href="home.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspHome</span></a><br>
+					<a href="http://alini.pythonanywhere.com/" class="nav-item"> • <span class="nav-text">&nbsp&nbspChatbot</span></a><br>
+					<a href="manual.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspManual</span></a><br>
+					<a href="equipe.html" class="nav-item"> • <span class="nav-text">&nbsp&nbspEquipe</span></a><br>
 				</div>
 
 			</div>
@@ -550,15 +572,16 @@
 				<b style="float: right;">A . L . I . N . I<img  class="final-icon" src="images/lamp.png"></b>
 			</div>
 		</div>
-<!-- Fim do Container-Fluid -->
+
 	</div>
+
+<!-- Fim do Container-Fluid-->
+</div>
 
 </body>
 </html>
 
 <!-- Importação do JQuery -->
-
-<script src="css/jquery.min.js"></script>
 <script>
 	$(document).ready(function(){
 
